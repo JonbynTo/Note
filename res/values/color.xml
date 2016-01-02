@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="hulan">#1e90ff</color>
+    <color name="title_bar">#5CACEE</color>
+    <color name="_title_bar">#7bbfea</color>
+    <color name="white">#ffffff</color>
+    <color name="text_color">#72777b</color>
+    <color name="yinshu">#a1a3a6</color>
+    <color name="line">#dedede</color>
+</resources>

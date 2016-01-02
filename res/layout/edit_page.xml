@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/title_edit"/>"
+
+	<ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:scrollbars="none">
+	    <RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="10dp">
+		    <EditText 
+		        android:id="@+id/text_content"
+		        android:layout_width="350dp"
+		        android:layout_height="300dp"
+		        android:hint="在此处输入您的备忘内容"
+		        android:background="@drawable/edit_text"
+		        android:gravity="top|left"
+		        android:padding="10dp"
+		        android:layout_centerHorizontal="true"/>
+		    <TextView 
+		        android:id="@+id/time_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="设置备忘时间"
+		        android:textSize="20sp"
+		        android:textColor="@color/text_color"
+		        android:layout_marginTop="12dp"
+		        android:layout_below="@id/text_content"
+		        android:layout_alignLeft="@id/text_content"/>
+		    <EditText 
+		        android:id="@+id/time_edit"
+		        android:layout_width="200dp"
+		        android:layout_height="40dp"
+		        android:background="@drawable/edit_text"
+		        android:gravity="center_vertical"
+		        android:padding="10dp"
+		        android:layout_below="@id/time_text"
+		        android:layout_alignLeft="@id/text_content"
+		        android:layout_marginTop="5dp"
+		        android:editable="false"
+		        android:focusable="false"/>
+		    <TextView 
+		        android:id="@+id/title_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="标题"
+		        android:textSize="20sp"
+		        android:textColor="@color/text_color"
+		        android:layout_marginTop="12dp"
+		        android:layout_below="@id/time_edit"
+		        android:layout_alignLeft="@id/text_content"/>
+		    <EditText 
+		        android:id="@+id/title_edit"
+		        android:layout_width="350dp"
+		        android:layout_height="40dp"
+		        android:background="@drawable/edit_text"
+		        android:gravity="center_vertical"
+		        android:padding="10dp"
+		        android:layout_centerHorizontal="true"
+		        android:layout_below="@id/title_text"
+		        android:layout_alignLeft="@id/text_content"
+		        android:layout_marginTop="5dp"/>
+		    <ImageView 
+		        android:id="@+id/change_date"
+		        android:layout_width="24dp"
+		        android:layout_height="24dp"
+		        android:src="@drawable/create"
+		        android:layout_alignRight="@id/time_edit"
+		        android:layout_alignBottom="@id/time_edit"
+		        android:layout_marginBottom="8dp"
+		        android:layout_marginRight="8dp"/>
+		</RelativeLayout >
+	</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/title_view"/>
+    
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp">
+	    
+	    <TextView 
+	        android:id="@+id/view_text_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text=""
+	        android:textSize="30sp"
+	        android:layout_marginLeft="5dp"/>
+	    
+	    <TextView 
+	        android:id="@+id/view_text_date"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="xxxx-xx-xx"
+	        android:textSize="15sp"
+	        android:textColor="@color/yinshu"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignBottom="@id/view_text_title"
+	        android:layout_marginRight="8dp"/>
+	    
+	    <TextView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dp"
+	        android:background="@color/line"
+	        android:layout_below="@+id/view_text_title"
+	        android:layout_marginTop="10dp"/>
+	    
+	    <ScrollView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+		    android:layout_below="@+id/view_text_title"
+		    android:layout_marginTop="20dp"
+		    android:scrollbars="none">
+	        <TextView 
+		        android:id="@+id/view_text_content"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg"
+		        android:textColor="@color/yinshu"
+		        android:textSize="20sp"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginRight="5dp"
+		        android:layout_marginBottom="5dp"/>
+	    </ScrollView>
+	    
+	</RelativeLayout >
+    
+</LinearLayout>

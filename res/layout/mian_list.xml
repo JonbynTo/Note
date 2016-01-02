@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:padding="8dp" >
+    
+    <TextView 
+        android:id="@+id/note_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="note_title"
+        android:textSize="20sp"
+        android:textColor="@color/text_color"/>
+	
+	<TextView 
+	    android:id="@+id/note_date"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="note_date"
+	    android:textSize="10sp"
+	    android:textColor="@color/yinshu"
+	    android:layout_below="@id/note_title"
+	    android:layout_alignLeft="@id/note_title"/>
+	
+	<ImageView 
+	    android:id="@+id/list_img"
+	    android:layout_width="20dp"
+	    android:layout_height="20dp"
+	    android:src="@drawable/nextpage"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginTop="7dp"/>"
+</RelativeLayout>
